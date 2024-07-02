@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Login Page</title>
+    <link href="login.css" rel="stylesheet">   
+    <script src="jslogin.js"></script>
+    </head>
+    <body bgcolor="red">
+        <form class="layout" method="post" action="">
+            <h1>Login</h1>
+            <p>Name: <input type="text" id="name" required></p>
+            <p>Email-id: <input type="email" id="email" required></p>
+            <p>Date Of Birth: <input type="date" id="dob" required></p>
+            <p>Gender: <input type="radio" name="gender" id="gender" value="Male" required>Male <input type="radio" name="gender" id="gender" value="Female" required>Female</p>
+            <p>Phone No: <input type="number" id="phone" required></p>
+            <p>Occupation:<select name="Occupation" id="occu" required>
+                <option>Farmer</option>
+                <option selected>Driver</option>
+                <option>Bussiness</option>
+            </select> 
+            </p>
+            <p>Skills: <input type="checkbox" id="skill" value="Java">java <input type="checkbox" value="c++">c++ <input type="checkbox" value="c">c</p>
+            <p>Comments:
+            <textarea rows="10" cols="40" id="comment" required></textarea></p>
+            <p><button type="submit" onclick="display()">Submit</button>  <button type="reset" onclick="reset()">Reset</button>    
+            </form>
+    </body>
+</html>
